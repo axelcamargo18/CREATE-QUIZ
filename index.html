@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetToKnowYouQuiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      class="contact-form"
+      id="contact"
+      action="http://myserver.com/submitUserInfo"
+      method="post"
+    >
+      <input type="date" />
+
+      <h1>Get to Know You Quiz</h1>
+
+      <p>
+        This is a Quiz to get to know you! Please answer every required input.
+      </p>
+
+      <div class="form-input-section">
+        <label for="firstName">First Name</label>
+        <input
+          id="firstName"
+          type="text"
+          placeholder="Not Your Street Name"
+          required
+        />
+      </div>
+      <br />
+
+      <div class="form-input-section">
+        <label for="lastName">Last Name</label>
+        <input
+          id="lastName"
+          type="text"
+          placeholder="No You Can't Have Ours"
+          required
+        />
+      </div>
+      <br />
+
+      <div class="form-input-section">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Yes We Will Spam You"
+          required
+        />
+      </div>
+      <br />
+
+      <div class="form-input-section">
+        <label for="phoneNumber">Phone Number (Ex.123-456-7890)</label>
+        <input
+          id="phoneNumber"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          maxlength="12"
+          placeholder="Asking For A Friend"
+          required
+        />
+      </div>
+      <br />
+
+      <div class="form-input-section">
+        <label for="subject">What is your favorite color?</label>
+        <input id="subject" type="text" placeholder="I'm Sure It's Basic" />
+      </div>
+      <br />
+
+      <div class="form-input-section">
+        <label for="subject"
+          >What Is One Thing You Would Change About Your Life?</label
+        >
+        <input id="subject" type="text" placeholder="We Care A Little" />
+      </div>
+
+      <br />
+
+      <div class="form-input-section">
+        <label for="subject">Where did you graduate college from?</label>
+        <input id="subject" type="text" placeholder="If You Graduated" />
+      </div>
+
+      <br />
+
+      <div class="form-input-section">
+        <button class="form-submit-btn" type="submit">Submit</button>
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
